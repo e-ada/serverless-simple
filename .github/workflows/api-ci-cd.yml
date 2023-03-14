@@ -1,4 +1,4 @@
-name: api-ci
+name: api-ci-cd
 
 on:
   push:
