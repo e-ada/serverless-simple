@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  test:cov:
+  test-cov:
     name: test:cov
     runs-on: ubuntu-latest
     strategy:
