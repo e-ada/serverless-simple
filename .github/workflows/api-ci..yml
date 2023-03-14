@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  test-cov:
-    name: test:cov
+  build:
+    name: build
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -20,3 +20,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: yarn
     - run: yarn test:cov --passWithNoTests
+    - run: yarn build
