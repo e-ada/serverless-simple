@@ -1,12 +1,12 @@
 import bodyParser from 'body-parser';
 import express, { Express } from 'express';
-import { ChuckNorrisJokesRouter } from './modules/chuck-norris';
+import { JokeRouter } from './modules/joke';
 
 const app: Express = express();
 app.disable('x-powered-by');
 
 app.use(bodyParser.json());
 
-app.use(ChuckNorrisJokesRouter);
+app.use(JokeRouter);
 
 export default app;
